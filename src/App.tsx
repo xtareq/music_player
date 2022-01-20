@@ -19,7 +19,7 @@ function App() {
             {/* Thumbnail */}
             <div className="thumbnail">
               <div className="disc"></div>
-              <img className={`${play?'play':''}`} src='https://cdn.pixabay.com/photo/2014/09/16/01/19/girl-447701__480.jpg' />
+              <img className={`${play?'play':''}`} src='https://1.bp.blogspot.com/-I_QnNgMitew/X0qcDY1vOhI/AAAAAAAAdtk/FykZ8OB5TJsjCVXUBGaPtAZtCNO12CRwgCLcBGAsYHQ/s1600/sad%2Bimages%2Bfor%2Bwhatsapp%2Bdp%2B%2B%252827%2529.jpg' />
             </div>
 
             <div className="meta">

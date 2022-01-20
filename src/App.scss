@@ -14,6 +14,9 @@
     min-height: 400px;
     height: auto;
     border: 2px solid indigo;
+    box-shadow: 0px 2px 4px indigo;
+    border-radius: 12px;
+    background-color: rgb(20, 18, 32);
 
 
     h3.title{
@@ -55,7 +58,7 @@
           transform: rotate(0deg);
         }
         100%{
-          transform: rotate(360deg);
+          transform: rotate(355deg);
         }
       }
 
