@@ -1,0 +1,130 @@
+
+
+
+.music-player{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+
+  .inner{
+    width: 355px;
+    min-height: 400px;
+    height: auto;
+    border: 2px solid indigo;
+
+
+    h3.title{
+      text-align: center;
+      color: rgb(240, 6, 103);
+      font-size: 25px;
+    }
+
+    div.thumbnail{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .disc{
+        position: absolute;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        margin: 50% auto;
+        background-color: rgba(26, 23, 41);
+        border: 2px solid rgba(255, 10, 181, 0.26);
+        border-radius: 50%;
+        
+      }
+      img{
+        width: 200px;
+        height: 200px;
+        border: 2px solid rgb(196, 30, 146,0.5);
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(196, 30, 146, 0.3);
+        &.play{
+          animation: spin 0.6s infinite linear;
+        }
+      }
+
+
+      @keyframes spin {
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+
+    }
+
+    div.meta{
+      padding: 20px;
+      text-align: center;
+
+      .song-title{
+        color: gainsboro;
+        font-size: 22px;
+      }
+      .artist{
+        color: rgb(90, 88, 88);
+      }
+    }
+
+    div.controls{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    
+
+      color: white;
+      .left{  
+        display: flex;
+        svg{
+          font-size: 62px;
+        }
+      }
+      .fill{
+        button{
+          background-color: transparent;
+          outline: none;
+          border-width: 0;
+          color: white;
+          display: flex;
+          svg{
+            font-size: 62px;
+          }
+        }
+
+      }
+
+      .right{
+        svg{
+          font-size: 62px;
+        }
+      }
+
+    }
+
+    div.timer{
+      padding: 20px;
+      input{
+        width: 100%;
+        
+      }
+      div.times{
+        display: flex;
+        justify-content: space-between;
+        color: gray;
+      }
+    }
+  }
+
+  
+  
+}
